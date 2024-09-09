@@ -8,4 +8,5 @@ module.exports = {
 SESSION_ID: process.env.SESSION_ID,
 ALIVE_IMG: process.env.ALIVE_IMG ||"https://telegra.ph/file/cad7038fe82e47f79c609.jpg",
 ALIVE_MSG: process.env.ALIVE_IMG ||"⭕DILISHA-MD-NEW⭕ RUN ⚡",
+MODE: process.env.MODE ||"public",
 };
