@@ -17,6 +17,7 @@ let status = `⭕*Uptime:*  ${runtime(process.uptime())}
 ⭕*HostName:* ${os.hostname()}
 ⭕*Owner:* ⚡Dilisha gimshan⚡
 ⭕*Contact:* ⚡0775713391⚡
+⭕*TEAM OF:* ⚡FAMILY BOTS⚡
 `
 
 return reply(`${status}`)
