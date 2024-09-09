@@ -38,7 +38,7 @@ let downloadUrl = down.dl_url
 
 // send video + document message
 await conn.sendmessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendmessage(from,{document: {url:downloadUrl}, mimetype:"video/mp4",fileName:data.tittle + ".mp4",caption:"MADE IN ⭕ DILISHA ⭕},{quoted:mek})
+await conn.sendmessage(from,{document: {url:downloadUrl}, mimetype:"video/mp4",fileName:data.tittle + ".mp4",caption:"MADE BY DILISHA},{quoted:mek})
 
 
 
