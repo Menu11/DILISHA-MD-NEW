@@ -14,7 +14,7 @@ const search = await yts(q)
 const data = search.videos[0];
 const url  = data.url
 
-let desc = ' 
+let desc = ` 
 ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
 ___________________________________________
 ⚡⚡⚡⚡⚡SONG DOWNLOADER⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
@@ -27,7 +27,7 @@ ___________________________________________
 MADE BY ⚡DILISHA⚡ ☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯
 ____________________________________________
 ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
-'
+`
 
 await conn.sendmessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
 
