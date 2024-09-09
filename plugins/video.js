@@ -29,7 +29,7 @@ ____________________________________________
 ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
 `
 
-await conn.sendmessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
+await conn.sendMessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
 
 //download video
 
@@ -37,9 +37,8 @@ let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
 
 // send video + document message
-await conn.sendmessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendmessage(from,{document: {url:downloadUrl}, mimetype:"video/mp4",fileName:data.tittle + ".mp4",caption:"MADE BY DILISHA},{quoted:mek})
-
+await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DILISHA"},{quoted:mek})
 
 
 }catch(e){
