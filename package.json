@@ -27,5 +27,6 @@
     "api-dylux":"1.8.5",
     "mongoose":"8.6.1"
     "@xaviabot/fb-downloader": "^1.0.14",
+    "mfiredlcore-vihangayt": "^1.0.0",
   }
 }
