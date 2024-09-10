@@ -47,7 +47,7 @@ const config = await readEnv();
 const prefix = config.PREFIX
 //==============================================
         
-console.log("Connecting wa bot 🧬...");
+console.log("Connecting Dilisha-MD 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -75,9 +75,9 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Bot connected to whatsapp ✅')
+console.log('DILISHA-MD IS RUN ✅')
 
-let up = `DILISHA-MD-NEW connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `DILISHA CONNECTED 👿\n\nPREFIX: ${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/cad7038fe82e47f79c609.jpg` }, caption: up })
 
