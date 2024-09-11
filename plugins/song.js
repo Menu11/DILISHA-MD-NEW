@@ -17,16 +17,16 @@ const data = search.videos[0];
 const url  = data.url
 
 let desc = ` 
-⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+⭕⭕⭕⭕⭕⭕BAD WOURL MUSIC⭕⭕⭕⭕⭕⭕
 ___________________________________________
-⚡⚡⚡⚡⚡SONG DOWNLOADER⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
-> tittle: ${data.tittle}
-> despcription: ${data.description}
-> time: ${data.time}
-> ago: ${data.ago}
-> views: ${data.views}
+⚡⚡⚡⚡⚡⚡BAD MUSIC⚡⚡⚡⚡⚡⚡⚡
+⭕ tittle: ${data.tittle}
+⭕ despcription: ${data.description}
+⭕ time: ${data.time}
+⭕ ago: ${data.ago}
+⭕ views: ${data.views}
 
-MADE BY ⚡DILISHA⚡ ☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯
+☯☯☯☯☯ MADE BY ⚡DILISHA⚡ ☯☯☯☯☯☯☯☯☯☯☯
 ____________________________________________
 ⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
 `
