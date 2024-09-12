@@ -17,19 +17,21 @@ const data = search.videos[0];
 const url  = data.url
 
 let desc = ` 
-⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
-___________________________________________
-⚡⚡⚡⚡⚡VIDEO DOWNLOADER⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
-> tittle: ${data.tittle}
-> despcription: ${data.description}
-> time: ${data.time}
-> ago: ${data.ago}
-> views: ${data.views}
-
-MADE BY ⚡DILISHA⚡ ☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯☯
+      SRILANKA NO1 WHATSAPP MUSIC GROUP 🇱🇰 
+                HAPPY LIFE YOU 🥸
 ____________________________________________
-⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+⭕ tittle: ${data.tittle}
+⭕ despcription: ${data.description}
+⭕ time: ${data.time}
+⭕ ago: ${data.ago}
+⭕ views: ${data.views}
+____________________________________________
+
+        A RESPONCE BY FAMILY MUSIC
+                   POWER BY ⭕DILISHA⭕
+                       ⚡BAD LOVING MUSIC⚡
 `
+
 
 await conn.sendMessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
 
