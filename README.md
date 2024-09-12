@@ -26,5 +26,11 @@
 <a href="https://vajirapair-3ea4809cee5a.herokuapp.com/"><img src="https://img.shields.io/badge/QR%20OR%20PAIR%20CODE-blue" alt="GET SESSION" width="200"></a>
 
   
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
+## ⭕Deploy to Heroku⭕
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/manulofficial7/Manu-MD-V6)
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
