@@ -43,7 +43,7 @@
 <a href='https://github.com/' target="_blank"><img alt='GitHub' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=github&logoColor=white'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 # copy github workflowr
-              name: Node.js CI
+ name: Node.js CI
 
 on:
   push:
@@ -56,25 +56,25 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
-    strategy:
+   strategy:
       matrix:
         node-version: [20.x]
 
-    steps:
+   steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Node.js
+   - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
+   - name: Install dependencies
       run: npm install
 
-    - name: Start application
+   - name: Start application
       run: npm start
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
