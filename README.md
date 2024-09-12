@@ -5,15 +5,7 @@
 </p>
 
 
-<p align="center">
 
-  <a href="https://github.com/Roudy-king/DILISHA-MD-NEW">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVajiraTech%2FVAJIRA-MD-NEW&count_bg=%2379C83D&title_bg=%23555555&icon=gitpod.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false" alt="Views"/></a>
-  <h1 align="center">DILISHA-MD-NEW</h1>
->
-
-  </a>
-</p>
 
 
 <br>
