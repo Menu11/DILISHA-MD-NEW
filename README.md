@@ -42,9 +42,40 @@
     <br>
 <a href='https://github.com/' target="_blank"><img alt='GitHub' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=github&logoColor=white'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- # Copy This Code For Github Workflow 
+# copy github workflowr
+              name: Node.js CI
 
-https://github.com/manulofficial7/GitHub-Workflow-Code
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
