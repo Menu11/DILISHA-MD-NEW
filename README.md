@@ -1,7 +1,7 @@
 <<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <h1 align="center">DEAXJS<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/33e5f1bfd36ea02f8b062.jpg" />
+<img src="https://telegra.ph/file/cad7038fe82e47f79c609.jpg" />
 </p>
 
 
