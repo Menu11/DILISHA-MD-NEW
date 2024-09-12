@@ -8,6 +8,9 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
+
+
+const l = cosole.log
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
 const P = require('pino')
