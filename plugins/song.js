@@ -17,18 +17,19 @@ const data = search.videos[0];
 const url  = data.url
 
 let desc = ` 
-⭕⭕⭕⭕⭕⭕BAD WOURL MUSIC⭕⭕⭕⭕⭕⭕
-___________________________________________
-⚡⚡⚡⚡⚡⚡BAD MUSIC⚡⚡⚡⚡⚡⚡⚡
+      SRILANKA NO1 WHATSAPP MUSIC GROUP 🇱🇰 
+                HAPPY LIFE YOU 🥸
+____________________________________________
 ⭕ tittle: ${data.tittle}
 ⭕ despcription: ${data.description}
 ⭕ time: ${data.time}
 ⭕ ago: ${data.ago}
 ⭕ views: ${data.views}
-
-☯☯☯☯☯ MADE BY ⚡DILISHA⚡ ☯☯☯☯☯☯☯☯☯☯☯
 ____________________________________________
-⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕⭕
+
+        A RESPONCE BY FAMILY MUSIC
+                   POWER BY ⭕DILISHA⭕
+                       ⚡BAD LOVING MUSIC⚡
 `
 
 await conn.sendMessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
