@@ -36,7 +36,7 @@
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
-#### ✨DEPLOY TO GITHUB❤️ 
+<h1> ✨DEPLOY TO GITHUB❤️ </h1>
 
 . If You don't have a account in Github. Create a account.
     <br>
