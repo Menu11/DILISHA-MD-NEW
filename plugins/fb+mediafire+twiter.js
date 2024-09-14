@@ -128,25 +128,4 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
 })
 
 
-//xvid downloader
-cmd({
-    pattern: "movie",
-    alias: ["movie"],
-    desc: "download movie videos",
-    category: "download",
-    filename: __filename
-},
-async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        if (!q && !q.startsWith("https://")) return reply("give me movie url")
-        //fetch data from api  
-        let data = await fetchJson(`${baseUrl}/api/movie?url=${q}`)
-        reply("*📥Downloading...*")
-        //send video (hd,sd)
-        await conn.sendMessage(from, { document: { url: data.data.hd }, mimetype: "video/mp4", caption: `- QUALITY HD\n\n> ${cap}` }, { quoted: mek }) 
-    } catch (e) {
-        console.log(e)
-        reply(`${e}`)
-    }
-})
-//----- *Share with Others* ------//
+
