@@ -104,11 +104,12 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
     }
 })
 
-//xvid downloader
+
+//gdrive(google drive) dl
 cmd({
     pattern: "xvid",
     alias: ["xvideo"],
-    desc: "download xvid videos",
+    desc: "download xvideo files",
     category: "download",
     filename: __filename
 },
@@ -118,14 +119,10 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/xvid?url=${q}`)
         reply("*📥Downloading...*")
-        //send video (hd,sd)
-        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `- QUALITY HD\n\n> ${cap}` }, { quoted: mek })
-        await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: `- QUALITY SD \n\n> ${cap}` }, { quoted: mek })  
+        await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DILISHA"},{quoted:mek})
+                                                                                                                 
     } catch (e) {
         console.log(e)
         reply(`${e}`)
     }
 })
-
-
-
