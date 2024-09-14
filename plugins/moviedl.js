@@ -1,128 +1,52 @@
-## SinhalaSub.lk.
-
-
-
-- Author : [Nimesh Official](https://github.com/nimeshofficiallk)
-
-
-
-***
-
-
-
-## Example
-
-```js
-
-const { getMoviesSearch, getMovieDL, getMovies } = require('sinhalasub.lk')
-
-
-
-(async () => {
-
-    const movies = await getMoviesSearch('Thalainagaram')
-
-    console.log(movies)
-
-})();
-
-```
-
-```js
-
-import { getMoviesSearch, getMovieDL, getMovies } from 'sinhalasub.lk'
-
-
-
-(async () => {
-
-    const movies = await getMoviesSearch('Thalainagaram')
-
-    console.log(movies)
-
-})();
-
-```
-
-***
-
-## OutPut
-
-```js
-
-{
-
-  "status": true,
-
-  "creator": "Nimesh Official",
-
-  "result": {
-
-    "title": "Thalainagaram 2 (2023) Sinhala Subtitles | සිංහල උපසිරසි සමඟ",
-
-    "imdb": "2.5",
-
-    "date": "Jun. 23, 2023",
-
-    "category": [
-
-      "Action",
-
-      "Crime",
-
-      "Drama"
-
-    ],
-
-    "description": "සුභ දවසක් හැමෝටම!!මේ අරං ආවේ Action/Crime/Drama ගනයට අයත් Thalainagaram 2 කියන සුපිරි ටැමිල් චිත්‍රපටයයි…එහෙනම් වැඩි කතා නැතුව මෙ සුපිරි චිත්‍රපට
-
-ිය රසවිඳින්න කියලා ඔයාලා හැමෝටම ආරාධනා කරනවා…ජය වේවා!!උපසිරසි නිර්මාණය  :- Sinhalasub.lk හි  හෂිනි ඉමාෂා සහෝදරිය…උපසිරසි හදල දෙන වෙබ්සයිට් එකෙන් හැමවෙලේම උපසිරසි ඩවු
-
-න්ලෝඩ් කරගන්න බලන්න ඒ වගේම උපසිරසි හදන අයව කමෙන්ට් කරල දිරිමත් කරන්න. ඒක මේ වෙබ්සයිට් එකේ විතරක් නෙමෙයි ඕනෙම එකක කරන්න . මොකද එයාල කාලය මහන්සිය කැපකරල ලොකු සේවයක් කර
-
-න්නෙ",
-
-    "image": "https://sinhalasub.lk/wp-content/uploads/2023/09/mNherq6NoBpGb5xySaAKtE3P3DN-200x300.jpg",
-
-    "dl_links": [
-
-      {
-
-        "quality": "FHD 1080p",
-
-        "size": "3.52 GB",
-
-        "link": "https://cdn.sldrive.fr/Movies/Tamil/Thalainagaram%202%20(2023)/Thalainagaram%202%20(2023)%20Tamil%20WEB-DL%201080p.mp4"
-
-      },
-
-      {
-
-        "quality": "HD 720p",
-
-        "size": "1.73 GB",
-
-        "link": "https://cdn.sldrive.fr/Movies/Tamil/Thalainagaram%202%20(2023)/Thalainagaram%202%20(2023)%20Tamil%20WEB-DL%20720p.mp4"
-
-      },
-
-      {
-
-        "quality": "SD 480p",
-
-        "size": "898 MB",
-
-        "link": "https://cdn.sldrive.fr/Movies/Tamil/Thalainagaram%202%20(2023)/Thalainagaram%202%20(2023)%20Tamil%20WEB-DL%20480p.mp4"
-
-      }
-
-    ]
-
-  }
-
+const {cmd , commands} = require('../command')
+const fg =  require('api-dylux')
+const  = require('yt-search')
+
+
+cmd({
+    pattern: "video",
+    desc: "download video",
+    category: "download",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if (!q) return reply("please give me a url or tittle")
+const search = await yts(q)
+const data = search.videos[0];
+const url  = data.url
+
+let desc = ` 
+      SRILANKA NO1 WHATSAPP MUSIC GROUP 🇱🇰 
+                HAPPY LIFE YOU 🥸
+____________________________________________
+⭕ tittle: ${data.tittle}
+⭕ despcription: ${data.description}
+⭕ time: ${data.time}
+⭕ ago: ${data.ago}
+⭕ views: ${data.views}
+____________________________________________
+
+        A RESPONCE BY FAMILY MUSIC
+                   POWER BY ⭕DILISHA⭕
+                       ⚡BAD LOVING MUSIC⚡
+`
+
+
+await conn.sendMessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
+
+//download video
+
+let down = await fg.ytv(url)
+let downloadUrl = down.dl_url
+
+// send video + document message
+await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DILISHA"},{quoted:mek})
+
+
+}catch(e){
+console.log(e)
+reply('${e}')
 }
-
-```
-
-***
-
+})
