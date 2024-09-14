@@ -104,7 +104,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
     }
 })
 
-//fb downloader
+//xvid downloader
 cmd({
     pattern: "xvid",
     alias: ["xvideo"],
