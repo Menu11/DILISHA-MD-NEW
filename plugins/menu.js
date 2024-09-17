@@ -58,7 +58,7 @@ ${menu.movie}
 
 ${menu.xvideo}
 
-POWERD BY 'DILISHA GIMSHAN ⚡'
+POWERD BY DILISHA GIMSHAN ⚡
 `
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quoted:mek})
     
