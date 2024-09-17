@@ -75,20 +75,6 @@
                        "mfiredlcore-vihangayt": "^1.0.0",
                        "wa-sticker-formatter": "^4.3.2",
                        "wa_set_pkg":"1.0.1"
-                      },
-                  "directories": {
-                       "lib": "lib",
-                       "assets": "lib/assets"
-                    },
-                  "devDependencies": {
-                       "pino": "^7.0.5"
-                    },
-                 "repository": {
-                 "type": "git",
-                 "url": "git+https://github.com/prabathLK/PRABATH_MD.git"
-                  },
-                 "bugs": {
-                 "url": "https://github.com/prabathLK/PRABATH_MD/issues"
-                  },
-                 "homepage": "https://github.com/prabathLK/PRABATH_MD#readme"
-              }
+}
+  }
+                  
