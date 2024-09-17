@@ -104,25 +104,4 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
     }
 })
 
-
-//gdrive(google drive) dl
-cmd({
-    pattern: "xvid",
-    alias: ["xvideo"],
-    desc: "download xvideo files",
-    category: "download",
-    filename: __filename
-},
-async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        if (!q && !q.startsWith("https://")) return reply("give me xvid url")
-        //fetch data from api  
-        let data = await fetchJson(`${baseUrl}/api/xvid?url=${q}`)
-        reply("*📥Downloading...*")
-        await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DILISHA"},{quoted:mek})
-                                                                                                                 
-    } catch (e) {
-        console.log(e)
-        reply(`${e}`)
-    }
-})
+//============== over try =================//
