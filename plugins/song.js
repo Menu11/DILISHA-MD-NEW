@@ -17,6 +17,8 @@ const data = search.videos[0];
 const url  = data.url
 
 let desc = ` 
+              DILISHA-MD WHATSAPP BOT
+         
       SRILANKA NO1 WHATSAPP MUSIC GROUP 🇱🇰 
                 HAPPY LIFE YOU 🥸
 ____________________________________________
@@ -29,7 +31,6 @@ ____________________________________________
 
         A RESPONCE BY FAMILY MUSIC
                    POWER BY ⭕DILISHA⭕
-                       ⚡BAD LOVING MUSIC⚡
 `
 
 await conn.sendMessage(from,{image:{url: data. thumbnail},caption:desc},{quoted:mek});
