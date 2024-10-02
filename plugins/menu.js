@@ -25,40 +25,44 @@ menu[commands[i].category] += `{config.PREFIX}${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu = ` 👋⭕HELLO ${pushname}⭕👋
-> ⭕DOWNLOAD COMMANDS⭕ 📥
+let madeMenu = ` 
+____________________________
+👋⭕HELLO ${pushname}⭕👋
+
+⭕DOWNLOAD COMMANDS⭕ 📥
 
 ${menu.download}
 
-> ⭕MAIN COMMANDS⭕ ⚡
+⭕MAIN COMMANDS⭕ ⚡
 
 ${menu.main}
 
->⭕GROUP COMMANDS⭕ ⏬
+⭕GROUP COMMANDS⭕ ⏬
 
 ${menu.groups}
 
->⭕OWNER COMMANDS⭕ 😈
+⭕OWNER COMMANDS⭕ 😈
 
 ${menu.owner}
 
-> ⭕CONVERT COMMAND⭕ 🔄
+⭕CONVERT COMMAND⭕ 🔄
 
 ${menu.convert}
 
->⭕SEARCH COMMAND⭕ 🥸
+⭕SEARCH COMMAND⭕ 🥸
 
 ${menu.search}
 
->⭕MOVIE COMMAND⭕ 🎬
+⭕MOVIE COMMAND⭕ 🎬
 
 ${menu.movie}
 
->⭕X VIDEO COMMAND⭕ 🥵
+⭕X VIDEO COMMAND⭕ 🥵
 
 ${menu.xvideo}
 
 POWERD BY DILISHA GIMSHAN ⚡
+_______________________________
 `
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quoted:mek})
     
